@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justine Carl | IT Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">JC<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">Personal Info</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#java">Java Code</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello, I'm <span>Justine Carl Orodio</span></h1>
+        <h2>A First-Year Information Technology Student</h2>
+        <p>I am a student who is learning about computers, programming, and web development. I enjoy learning new skills and improving my knowledge in technology.</p>
+        <a class="btn" href="#about">Get to know me</a>
+      </div>
+      <div class="profile-placeholder">
+  <img src="myphoto.jpg" alt="My Profile Photo">
+</div>
+
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2>Personal Information</h2>
+      <div class="info-grid">
+        <article class="card">
+          <h3>About Me</h3>
+          <p>My name is <b>Justine Carl R. Orodio</b>>. I am a first-year Information Technology student from <b>OLSCHO.</b> I want to improve my skills in programming and learn more about how technology works. My goal is to become a successful IT professional in the future.</p>
+        </article>
+        <article class="card">
+          <h3>Personal Details</h3>
+          <p><strong>Name:</strong> Justine Carl R. Orodio</p>
+          <p><strong>School:</strong> Our Lady of the Sacred Heart College of Guimba, inc.</p>
+          <p><strong>Course:</strong> Information Technology</p>
+          <p><strong>Year Level:</strong> First Year</p>
+          <p><strong>Address:</strong> Calem, Guimba Nueva Ecija</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="education">
+      <p class="eyebrow">MY LEARNING JOURNEY</p>
+      <h2>Educational Background</h2>
+      <div class="card">
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div>
+            <h3>College</h3>
+            <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+            <p><strong>School:</strong> Our Lady of the Sacred Heart College of Guimba, inc.</p>
+            <p><strong>Status:</strong> Our Lady of the Sacred Heart College of Guimba, inc.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div>
+            <h3>Senior High School</h3>
+            <p><strong>Strand:</strong> Information and Communications Technology</p>
+            <p><strong>School:</strong> Guimba Senior High School</p>
+            <p><strong>Status:</strong> Graduated</p>
+          </div>
+        </div>
+      </div>
+    <section class="section" id="skills">
+      <p class="eyebrow">WHAT I CAN DO</p>
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <article class="card"><h3>HTML</h3><p>Creating the structure of web pages.</p></article>
+        <article class="card"><h3>CSS</h3><p>Adding colors, layouts, and styles to websites.</p></article>
+        <article class="card"><h3>Java</h3><p>Learning basic programming and writing simple programs.</p></article>
+        <article class="card"><h3>Problem-Solving</h3><p>Finding ways to understand and solve tasks.</p></article>
+        <article class="card"><h3>Teamwork</h3><p>Working and sharing ideas with other people.</p></article>
+        <article class="card"><h3>Communication</h3><p>Sharing information and listening to others.</p></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="java">
+      <p class="eyebrow">MY PROGRAMMING WORK</p>
+      <h2>Java Code</h2>
+      <article class="card">
+        <h3>My CC102 Final Performance Task</h3>
+        <p>This section is for the Java source code of my console-based game.</p>
+        <pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class GuessTheNumber {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int number = random.nextInt(10) + 1;
+        int guess;
+        int attempts = 3;
+
+        System.out.println("==========================");
+        System.out.println("     GUESS THE NUMBER");
+        System.out.println("==========================");
+        System.out.println("Guess a number from 1 to 10.");
+        System.out.println("You have 3 attempts!");
+
+        for (int i = 1; i <= attempts; i++) {
+
+            System.out.print("\nEnter your guess: ");
+            guess = input.nextInt();
+
+            if (guess == number) {
+                System.out.println("Congratulations! You won!");
+                break;
+            } 
+            else if (guess < number) {
+                System.out.println("Too low! Try again.");
+            } 
+            else {
+                System.out.println("Too high! Try again.");
+            }
+
+            if (i == attempts) {
+                System.out.println("\nGame Over!");
+                System.out.println("The correct number was " + number);
+            }
+        }
+
+        System.out.println("\nThank you for playing!");
+        input.close();
+    }
+}</code></pre>
+      </article>
+    </section>
+
+    <section class="section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Contact Information</h2>
+      <div class="card contact-card">
+        <p><strong>Email:</strong> orodiojustinecarl130@gmail.com</p>
+        <p><strong>Phone:</strong> 09156487866</p>
+        <p><strong>Facebook:</strong> Justine Carl Ramento Orodio</p>
+        <p><strong>GitHub:</strong>https://orodiojustinecarl130-ctrl.github.io/Justine_Carl_Orodio/ </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Justine Carl Orodio | Personal IT Portfolio</p>
+  </footer>
+</body>
+</html>
